@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+/*
+			for(i=1;;i++){//这里输入n个数，没有指定循环次数，所以用while比较好
+				var number=prompt("请输入n个数：")*1;
+				var count=i;
+				//var max=number;
+				//var min=number;
+			   var sum=sum+number;
+				if(number==0){
+				break;
+			}
+			}
+			var arg=sum/count+"";
+			document.write(arg);*/
+			var sum=0;
+			var count=0;
+			var arg=0;
+			while(true){
+				var num=prompt("请输入n个数：")*1;
+				if(num==0){
+					break;//这里要添加终止的条件，不然会成为死循环，因为while的条件永远为真
+				}
+				count++;
+				sum=sum+num;
+			}
+			arg=sum/count;
+			document.write("平均数:"+arg);
+			
+//			var max,min,count=0;
+//			while(true){
+//				var num = prompt("请输入：")*1;
+//				if(count==0){
+//					max = num;
+//					min = num;
+//				}
+//				
+//				max = max<num?num:max;
+//				min =min>num?num:min;
+//				count++;
+//				
+//			}
+//			document.write(max);
+//			document.write(min);
+//			
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
